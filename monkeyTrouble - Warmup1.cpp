@@ -26,4 +26,3 @@ int main()
 }
 
 //Well, my version was a bit longer then the very short version, but it's pretty much the same thing really.
-//Also my testing part is a bit different than the one in the monkeyTrouble page, because I wrote 
