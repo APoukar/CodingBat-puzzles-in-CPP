@@ -14,14 +14,9 @@ bool monkeyTrouble(bool aSmile, bool bSmile)
 int main()
 {		
 	//Testing
-	bool aSmile = true;
-	bool bSmile = true;
-	cout << monkeyTrouble(aSmile,bSmile);
-	aSmile = false;
-	bSmile = false;
-	cout << monkeyTrouble(aSmile,bSmile);
-	aSmile = true;
-	cout << monkeyTrouble(aSmile,bSmile);
+	cout << monkeyTrouble(true,true);
+	cout << monkeyTrouble(false,false);
+	cout << monkeyTrouble(true,false);
 	cin.get();
 }
 

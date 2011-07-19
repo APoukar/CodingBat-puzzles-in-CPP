@@ -11,14 +11,9 @@ bool sleepIn(bool weekday, bool vacation)
 int main()
 {		
 	//Testing
-	bool weekday = false;
-	bool vacation = false;
-	cout << sleepIn(weekday,vacation);
-	weekday = true;
-	cout << sleepIn(weekday,vacation);
-	weekday = false;
-	vacation = true;
-	cout << sleepIn(weekday,vacation);
+	cout << sleepIn(false,false);
+	cout << sleepIn(true,false);
+	cout << sleepIn(false,true);
 	cin.get();
 }
 

@@ -16,14 +16,10 @@ int diff21(int n)
 int main()
 {
 	//Testing
-	int n = 19;
-	cout << diff21(n);
-	n = 10;
-	cout << diff21(n);
-	n = 21;
-	cout << diff21(n);
-	n = 30;
-	cout << diff21(n);
+	cout << diff21(19);
+	cout << diff21(10);
+	cout << diff21(21);
+	cout << diff21(30);
 	cin.get();
 }
 //My version works the other way around than the solution in the site :D

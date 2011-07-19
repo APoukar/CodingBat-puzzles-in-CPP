@@ -19,14 +19,9 @@ bool parrotTrouble(bool talking, int hour)
 int main()
 {
 	//Testing
-	bool talking = true;
-	int hour = 6;
-	cout << parrotTrouble(talking,hour);
-	hour = 7;
-	cout << parrotTrouble(talking,hour);
-	hour = 6;
-	talking = false;
-	cout << parrotTrouble(talking,hour);
+	cout << parrotTrouble(true,6);
+	cout << parrotTrouble(true,7);
+	cout << parrotTrouble(false,6);
 	cin.get();
 }
 
