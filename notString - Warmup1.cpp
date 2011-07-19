@@ -7,14 +7,13 @@ using namespace std;
 
 string notString(string str)
 {
-	if (string::npos != str.find("not")) //NOTE: Assuming that not is in lowercase. It also assumes that not is in the							 
-	{				     //beginning, meaning that this func. can be abused by putting not anywhere.
-		 return str;
+	string strCheck = str.substr(0, 3);
+	if (strCheck == "not") //assumes lowercase 'not' before the string.
+	{
+		return str;
 	}
 	else
-	{
-		return "not " + str; 	
-	}
+	{return "not " + str;}
 }
 
 int main()
@@ -23,10 +22,22 @@ int main()
 	cout << notString("candy") << endl;
 	cout << notString("x") << endl;
 	cout << notString("not bad") << endl;
+	cout << notString("I can not eat") << endl;
 	cin.get();
 }
 //Well, this one was rather tricky one, since I'm not really all that familiar with strings in C++.
-//Code for search from - http://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c
-//Seriously though, I'm sure that there are WAY better ways of doing this, but as I said - I haven't worked
-//with the string lib. long enough, to know how it works. So yeah - I would call this a quick hack, rather than
-//an actual solution.
+
+//EDIT: So I did some checking out, and I found about substr, and decided to use it to extract the first 3 letters of
+//the string, and check wherever it equals 'not' or doesn't. Perhaps there are better ways to do this, but this certainly
+//works better than the first version (below), and this can be considered an answer to this excercise. 
+
+////Code for search from - http://stackoverflow.com/questions/2340281/check-if-a-string-contains-a-string-in-c
+//OLD CODE: (notString)
+	/*if (string::npos != str.find("not",0, 3)) //NOTE: Assuming that not is in lowercase. It also assumes that not is in the							 
+	{	   	      			    //beginning, meaning that this func. can be abused by putting not anywhere.
+		 return str;
+	}
+	else	
+	{
+		return "not " + str; 	
+	} */
