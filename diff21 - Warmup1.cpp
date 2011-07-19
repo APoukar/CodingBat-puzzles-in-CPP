@@ -27,4 +27,3 @@ int main()
 	cin.get();
 }
 //My version works the other way around than the solution in the site :D
-//
