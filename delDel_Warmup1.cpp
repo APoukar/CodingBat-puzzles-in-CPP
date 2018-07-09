@@ -5,7 +5,7 @@
 #include <string>
 
 std::string delDel(std::string str) {
-    if(str.length() > 3 && (str.substr(1,3) == "del")) {
+    if(str.length() > 3 && str.substr(1,3) == "del") {
         return str.at(0) + str.substr(4);
     }
     return str;
